@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerita Ojol Santuy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #fff9f0;
+        --surface: #ffffff;
+        --surface-soft: #fff3df;
+        --primary: #ff9f1c;
+        --primary-deep: #ff7a00;
+        --secondary: #ffd166;
+        --accent: #ff5d8f;
+        --text: #1f2937;
+        --muted: #667085;
+        --shadow: 0 25px 60px rgba(255, 133, 0, 0.18);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(135deg, #fffaf2 0%, #fff2c9 35%, #ffecdd 100%);
+        color: var(--text);
+      }
+      img { display: block; max-width: 100%; }
+      button { font: inherit; border: none; cursor: pointer; }
+
+      .story-page {
+        width: min(1180px, calc(100% - 40px));
+        margin: 24px auto 48px;
+      }
+
+      .story-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 18px 28px;
+        background: rgba(255,255,255,0.76);
+        border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 24px;
+        box-shadow: 0 14px 26px rgba(20,20,20,0.04);
+      }
+
+      .brand-wrap { display: flex; align-items: center; gap: 12px; }
+      .brand-icon {
+        width: 44px; height: 44px; border-radius: 14px;
+        display: grid; place-items: center;
+        background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+        color: #fff; font-size: 1.5rem; font-weight: 800;
+        box-shadow: 0 14px 24px rgba(255,122,0,0.28);
+      }
+      .brand-name { margin: 0; font-size: 1.05rem; font-weight: 800; }
+      .brand-tag { color: var(--muted); font-size: 0.72rem; }
+      .header-link { text-decoration: none; color: var(--primary-deep); font-weight: 700; }
+
+      .story-content { margin-top: 32px; }
+      .story-hero {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; padding: 10px 0 18px;
+      }
+
+      .eyebrow {
+        display: inline-block; padding: 0.5rem 0.9rem; background: rgba(255,177,81,0.18);
+        border: 1px solid rgba(255,177,81,0.35); border-radius: 999px; color: var(--primary-deep);
+        font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em;
+      }
+
+      .story-copy h1 {
+        margin: 18px 0 16px; font-size: clamp(2.5rem, 4vw, 4.2rem); line-height: 1.05; letter-spacing: -0.07em;
+      }
+      .story-copy p { margin: 0; color: var(--muted); line-height: 1.8; font-size: 1.05rem; }
+      .story-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+
+      .primary-btn, .secondary-btn {
+        border-radius: 999px; padding: 0.95rem 1.5rem; font-weight: 700; transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .primary-btn {
+        background: linear-gradient(135deg, var(--primary), var(--primary-deep)); color: #fff;
+        box-shadow: 0 18px 30px rgba(255,136,0,0.28);
+      }
+      .secondary-btn {
+        background: rgba(255,255,255,0.7); color: var(--text); border: 1px solid rgba(31,41,55,0.08);
+      }
+      .primary-btn:hover, .secondary-btn:hover { transform: translateY(-1px); }
+
+      .story-image-card, .story-photo-wrap {
+        background: linear-gradient(180deg, #fff8ee 0%, #ffeec9 100%);
+        border-radius: 30px; padding: 18px; box-shadow: var(--shadow);
+      }
+      .story-image-card img, .story-photo-wrap img {
+        width: 100%; height: auto; min-height: 300px; display: block; border-radius: 24px;
+        object-fit: contain; background: #fff;
+      }
+
+      .story-moment, .story-journey { margin-top: 90px; }
+      .section-heading { margin-bottom: 28px; }
+      .section-heading.center { text-align: center; }
+      .section-heading h2 {
+        margin: 12px 0 0; font-size: clamp(2rem, 3vw, 3rem); letter-spacing: -0.05em;
+      }
+
+      .story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+      .story-card {
+        border-radius: 24px; padding: 28px 24px; box-shadow: 0 18px 36px rgba(20,20,20,0.04);
+      }
+      .story-card.yellow { background: rgba(255, 209, 102, 0.18); }
+      .story-card.orange { background: rgba(255, 159, 28, 0.15); }
+      .story-card.pink { background: rgba(255, 93, 143, 0.12); }
+      .story-card h3 { margin: 0 0 12px; font-size: 1.4rem; }
+      .story-card p { margin: 0; color: var(--muted); line-height: 1.8; }
+
+      .story-journey { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+      .story-steps { padding-left: 10px; }
+      .story-steps h2 { margin: 16px 0 0; font-size: clamp(2rem, 3vw, 3rem); line-height: 1.15; letter-spacing: -0.05em; }
+      .story-list { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 18px; }
+      .story-list li {
+        display: flex; gap: 18px; align-items: flex-start; background: rgba(255,255,255,0.76);
+        border-radius: 20px; padding: 18px;
+      }
+      .step-no {
+        width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center;
+        background: linear-gradient(135deg, #ffe6b4, #ffd166); color: var(--primary-deep); font-weight: 800;
+      }
+      .story-list h4 { margin: 0 0 6px; font-size: 1.15rem; }
+      .story-list p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+      @media (max-width: 920px) {
+        .story-hero, .story-journey, .story-grid { grid-template-columns: 1fr; }
+        .story-header { flex-wrap: wrap; justify-content: center; }
+      }
+
+      @media (max-width: 560px) {
+        body { min-width: 320px; }
+        .story-page { width: min(100% - 18px, 1180px); margin: 12px auto 32px; }
+        .story-header { padding: 14px 16px; gap: 10px; }
+        .brand-wrap { width: 100%; justify-content: center; text-align: center; }
+        .header-link { width: 100%; text-align: center; padding-top: 4px; }
+        .story-hero { gap: 20px; }
+        .story-copy h1 { font-size: 2.1rem; line-height: 1.12; letter-spacing: -0.05em; }
+        .story-copy p { font-size: 0.96rem; }
+        .story-actions { flex-direction: column; width: 100%; }
+        .primary-btn, .secondary-btn { width: 100%; padding: 0.9rem 1rem; }
+        .story-image-card, .story-photo-wrap { padding: 12px; }
+        .story-image-card img, .story-photo-wrap img { min-height: 220px; }
+        .story-card { padding: 20px 18px; }
+        .story-steps { padding-left: 0; }
+        .story-list li { flex-direction: column; align-items: flex-start; }
+        .step-no { width: 46px; height: 46px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="story-page">
+      <header class="story-header">
+        <div class="brand-wrap">
+          <div class="brand-icon">O</div>
+          <div>
+            <p class="brand-name">Ojol Santuy</p>
+            <span class="brand-tag">Cerita perjalanan tiap hari</span>
+          </div>
+        </div>
+        <a href="#cerita" class="header-link">Baca Cerita</a>
+      </header>
+
+      <main class="story-content">
+        <section class="story-hero" id="cerita">
+          <div class="story-copy">
+            <span class="eyebrow">Cerita Ojol</span>
+            <h1>Setiap hari, ada perjalanan yang membawa orang sampai tujuan.</h1>
+            <p>
+              Dari rumah ke kantor, dari kampus ke pasar, sampai malam hari saat hujan turun dan orang butuh transportasi yang aman dan cepat. Di situlah Ojol Santuy hadir, bukan sekadar jasa antar, tapi teman perjalanan yang selalu siap membantu mengatasi rutinitas kota.
+            </p>
+            <div class="story-actions">
+              <button class="primary-btn">Pesan Sekarang</button>
+              <button class="secondary-btn">Jelajahi Rute</button>
+            </div>
+          </div>
+
+          <div class="story-image-card">
+            <img
+              src="images/IMG-20260829-WA0005.jpg"
+              alt="ojol-santuy"
+            />
+          </div>
+        </section>
+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" 
+              alt="ojol-santuy"
+            />
+          </div>
+        </section>
+
+        <section class="story-moment">
+          <div class="section-heading center">
+            <span class="eyebrow">Kenangan Perjalanan</span>
+            <h2>Hari-hari santai, tapi tetap penuh makna</h2>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card yellow">
+              <h3>Pagi yang berenergi</h3>
+              <p>Driver datang tepat waktu, lalu membawa penumpang menuju kantor dengan rute yang efektif dan suasana yang hangat.</p>
+            </article>
+
+            <article class="story-card orange">
+              <h3>Siang yang ringan</h3>
+              <p>Di tengah aktivitas kota, Ojol Santuy membantu menghubungkan orang ke tempat tujuan tanpa ribet dan tanpa stres.</p>
+            </article>
+
+            <article class="story-card pink">
+              <h3>Malem yang aman</h3>
+              <p>Saat malam tiba, perjalanan terasa lebih tenang karena ada driver yang siap menemani sampai tujuan dengan aman.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="story-journey">
+          <div class="story-photo-wrap">
+            <img
+              src="images/IMG_20260830_170802.jpg"
+              alt="ojol-santuy"
+            />
+          </div>
+
+          <div class="story-steps">
+            <span class="eyebrow">Alur Cerita</span>
+            <h2>Perjalanan yang dimulai dari satu permintaan, lalu berubah menjadi rasa percaya.</h2>
+
+            <ul class="story-list">
+              <li>
+                <span class="step-no">01</span>
+                <div>
+                  <h4>Pesan dengan mudah</h4>
+                  <p>Penumpang memilih tujuan hanya dalam beberapa langkah.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-no">02</span>
+                <div>
+                  <h4>Driver tiba cepat</h4>
+                  <p>Waktu tunggu singkat dan rute yang jelas membuat perjalanan terasa ringan.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-no">03</span>
+                <div>
+                  <h4>Sampai dengan senyum</h4>
+                  <p>Setiap perjalanan berakhir dengan rasa aman, nyaman, dan puas.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
