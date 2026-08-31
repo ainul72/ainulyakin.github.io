@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://driver-gojek.com/sitemap.xml
+
+# Delay untuk bot yang aggressive
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
