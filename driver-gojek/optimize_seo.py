@@ -76,12 +76,12 @@ for num in range(1, 21):
   "dateModified": "2026-09-01",
   "author": {{
     "@type": "Organization",
-    "name": "Ojol Santuy",
+    "name": "Driver Gojek",
     "url": "https://driver-gojek.com"
   }},
   "publisher": {{
     "@type": "Organization",
-    "name": "Ojol Santuy",
+    "name": "Driver Gojek",
     "logo": {{
       "@type": "ImageObject",
       "url": "https://driver-gojek.com/images/logo.png"
@@ -110,7 +110,7 @@ for num in range(1, 21):
     <meta property="og:description" content="{escape_json_string(description)}" />
     <meta property="og:site_name" content="Ojol Santuy" />
     <meta property="article:published_time" content="2026-09-01T00:00:00Z" />
-    <meta property="article:author" content="Ojol Santuy" />
+    <meta property="article:author" content="Driver Gojek" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
