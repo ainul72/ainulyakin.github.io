@@ -20,7 +20,7 @@ Setiap artikel sekarang memiliki:
 ✓ **Open Graph Tags** - Optimal social media sharing:
   - og:type = article
   - og:title, og:description, og:url
-  - og:site_name = Ojol Santuy
+  - og:site_name = Driver Gojek
   - article:published_time
 
 ✓ **Twitter Card Tags** - Twitter-specific metadata:
@@ -33,7 +33,7 @@ Setiap artikel sekarang memiliki:
   - Author & Publisher info
 
 ✓ **Proper Heading Structure** - H1 tag untuk judul artikel utama  
-✓ **Title Tags** - Format: "Judul Artikel - Ojol Santuy" (optimal untuk SERP)
+✓ **Title Tags** - Format: "Judul Artikel - Driver Gojek" (optimal untuk SERP)
 
 ### 3. **Site Architecture Files**
 
@@ -115,7 +115,7 @@ Jika script tidak berjalan optimal, gunakan template di bawah untuk artikel 3-20
 <meta property="og:url" content="https://driver-gojek.com/artikelN.html" />
 <meta property="og:title" content="[ARTICLE TITLE]" />
 <meta property="og:description" content="[UNIQUE DESCRIPTION]" />
-<meta property="og:site_name" content="Ojol Santuy" />
+<meta property="og:site_name" content="Driver Gojek" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="[ARTICLE TITLE]" />
@@ -130,8 +130,8 @@ Jika script tidak berjalan optimal, gunakan template di bawah untuk artikel 3-20
   "url": "https://driver-gojek.com/artikelN.html",
   "datePublished": "2026-09-01",
   "dateModified": "2026-09-01",
-  "author": {"@type": "Organization", "name": "Ojol Santuy"},
-  "publisher": {"@type": "Organization", "name": "Ojol Santuy"}
+  "author": {"@type": "Organization", "name": "Driver Gojek"},
+  "publisher": {"@type": "Organization", "name": "Driver Gojek"}
 }
 </script>
 ```
