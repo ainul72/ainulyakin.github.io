@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidup untuk Belajar | Catatan Perjalanan</title>
+    <meta name="description" content="Sebuah cerita tentang belajar, bertumbuh, dan menemukan makna dari setiap pengalaman kehidupan.">
+    <meta name="keywords" content="hidup untuk belajar, belajar, motivasi belajar, belajar dari kehidupan, pendidikan, pengetahuan">
+    <meta name="author" content="Ainul Yakin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #152a32;
+            --muted: #587078;
+            --paper: #fffdf8;
+            --accent: #d66b45;
+            --teal: #1e6a6e;
+            --line: #e8e2d6;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            font-family: "DM Sans", sans-serif;
+            background: #dcebe5;
+            background-image: radial-gradient(circle at 12% 8%, rgba(255,255,255,.72) 0 7%, transparent 28%), linear-gradient(135deg, #dcebe5 0%, #f3dfca 48%, #c8dfd8 100%);
+            min-height: 100vh;
+        }
+
+        .page { max-width: 1180px; margin: 0 auto; padding: 30px 22px 58px; }
+
+        .topbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 46px; }
+        .brand { color: var(--teal); font-weight: 700; letter-spacing: .04em; }
+        .chapter { color: var(--muted); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+
+        .hero { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(330px, .92fr); align-items: center; gap: 56px; margin-bottom: 32px; }
+        .eyebrow { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+        h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; line-height: 1.1; }
+        h1 { max-width: 680px; margin: 16px 0 20px; font-size: clamp(3rem, 7vw, 6.2rem); letter-spacing: -.03em; }
+        .lead { max-width: 570px; margin: 0; color: var(--muted); font-size: 1.16rem; line-height: 1.8; }
+
+        .illustration { overflow: hidden; border: 1px solid rgba(255,255,255,.8); border-radius: 8px; background: #c4ded8; box-shadow: 18px 22px 0 rgba(30,106,110,.12), 0 20px 50px rgba(21,42,50,.14); }
+        .illustration svg { display: block; width: 100%; height: auto; }
+
+        .story { display: grid; grid-template-columns: 1fr 290px; gap: 48px; max-width: 930px; margin: 36px auto 0; padding: 60px clamp(24px, 6vw, 76px); border: 1px solid rgba(232,226,214,.9); border-radius: 8px; background: rgba(255,253,248,.94); box-shadow: 0 24px 60px rgba(21,42,50,.1); }
+        .article p { margin: 0 0 26px; color: #334b51; font-size: 1.04rem; line-height: 1.95; }
+        .article h2 { margin: 0 0 20px; font-size: 2.2rem; }
+        .article h3 { margin: 42px 0 14px; color: var(--teal); font-size: 1.45rem; }
+        .dropcap:first-letter { float: left; margin: 8px 10px 0 0; color: var(--accent); font-family: "Playfair Display", Georgia, serif; font-size: 4.5rem; font-weight: 700; line-height: .75; }
+        .quote { margin: 34px 0; padding: 22px 0 22px 22px; border-left: 3px solid var(--accent); color: var(--teal); font-family: "Playfair Display", Georgia, serif; font-size: 1.35rem; line-height: 1.5; }
+        .aside { align-self: start; padding-top: 6px; border-top: 2px solid var(--accent); }
+        .aside h3 { margin: 16px 0 14px; color: var(--ink); font-size: 1.25rem; }
+        .aside p { color: var(--muted); font-size: .92rem; line-height: 1.7; }
+        .list { margin: 22px 0 0; padding: 0; list-style: none; }
+        .list li { padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+        .list strong { display: block; margin-bottom: 3px; color: var(--ink); }
+        .site-info { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 28px; margin: 44px auto 0; max-width: 930px; padding: 34px clamp(24px, 5vw, 58px); border-top: 1px solid rgba(21,42,50,.2); }
+        .info-block { min-width: 0; }
+        .info-block h2 { margin: 0 0 12px; color: var(--teal); font-size: 1.28rem; }
+        .info-block p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.75; }
+        .info-block a { color: var(--accent); font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+        .info-block a:hover, .info-block a:focus-visible { text-decoration: underline; }
+        footer { margin-top: 8px; padding: 30px 20px 0; color: var(--muted); font-size: .88rem; text-align: center; }
+        footer h2 { margin: 0 0 8px; color: var(--teal); font-family: "Playfair Display", Georgia, serif; font-size: 1.5rem; }
+        footer p { margin: 0; line-height: 1.7; }
+
+        @media (max-width: 760px) {
+            .page { padding: 22px 16px 40px; }
+            .topbar { margin-bottom: 36px; }
+            .chapter { display: none; }
+            .hero { grid-template-columns: 1fr; gap: 30px; }
+            h1 { font-size: clamp(3rem, 16vw, 5rem); }
+            .illustration { max-width: 480px; }
+            .story { grid-template-columns: 1fr; gap: 34px; margin-top: 24px; padding: 38px 24px; }
+            .article p { font-size: 1rem; }
+            .site-info { grid-template-columns: 1fr; gap: 26px; margin-top: 30px; padding: 30px 8px 0; }
+        }
+    </style>
+</head>
+<body> 
+    <main class="page">
+        <header class="topbar">
+            <div class="brand">CATATAN HARIAN</div>
+            <div class="chapter">Edisi 01 &nbsp; / &nbsp; Ruang untuk bertumbuh</div>
+        </header>
+
+        <section class="hero" aria-labelledby="judul">
+            <div>
+                <div class="eyebrow">Sebuah refleksi kecil</div>
+                <h1 id="judul">Hidup untuk belajar.</h1>
+                <p class="lead">Hidup bukan perlombaan untuk tiba paling cepat, melainkan perjalanan untuk pulang dengan pemahaman yang lebih dalam.</p>
+            </div>
+            <div class="illustration" aria-label="Ilustrasi seseorang sedang membaca buku" role="img">
+                <svg viewBox="0 0 560 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="560" height="500" fill="#c5dfd9"/>
+                    <circle cx="432" cy="102" r="72" fill="#f3c88d" opacity=".75"/>
+                    <path d="M0 390c108-38 205-20 290 5 93 28 160 18 270-28v133H0z" fill="#7fada3"/>
+                    <path d="M68 417c110-18 257-20 423 18" fill="none" stroke="#f8f1df" stroke-width="9" opacity=".7"/>
+                    <path d="M186 287c5-61 34-111 89-111 61 0 92 50 92 116v92H180z" fill="#e7a37d"/>
+                    <path d="M225 202c-11-42 22-85 69-85 44 0 72 29 71 72-12-20-31-32-54-33-21 27-50 42-86 46z" fill="#263f43"/>
+                    <circle cx="269" cy="194" r="5" fill="#263f43"/><circle cx="319" cy="194" r="5" fill="#263f43"/>
+                    <path d="M275 224c13 10 27 10 40 0" fill="none" stroke="#9d5c55" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M195 292c43 4 79 33 90 76l-94 32z" fill="#d66b45"/>
+                    <path d="M367 291c-43 4-79 33-90 76l94 32z" fill="#1e6a6e"/>
+                    <path d="M184 365l105 15 5 82H141z" fill="#263f43"/><path d="M376 365l-105 15-5 82h153z" fill="#173f46"/>
+                    <path d="M193 307l78 87-15 16-80-74z" fill="#e7a37d"/><path d="M367 307l-78 87 15 16 80-74z" fill="#e7a37d"/>
+                    <path d="M186 391l91 10-6 58-105-11z" fill="#fffdf8"/><path d="M374 391l-91 10 6 58 105-11z" fill="#f8f0df"/>
+                    <path d="M279 401l8 58" stroke="#d6c6ae" stroke-width="3"/><path d="M205 414h56M350 414h-56M204 432h55M350 432h-55" stroke="#9eb8ae" stroke-width="3"/>
+                </svg>
+            </div>
+        </section>
+
+        <article class="story">
+            <div class="article">
+                <h2>Perjalanan yang tidak pernah selesai</h2>
+                <p class="dropcap">Hidup adalah perjalanan panjang untuk terus belajar. Sejak membuka mata di pagi hari, kita sebenarnya sedang berhadapan dengan pelajaran-pelajaran baru: bagaimana memahami diri sendiri, bagaimana mendengarkan orang lain, dan bagaimana tetap melangkah ketika rencana tidak berjalan seperti yang diharapkan.</p>
+                <p>Belajar tidak hanya berlangsung di sekolah, di dalam kelas, atau di antara halaman buku. Ia hadir dalam percakapan sederhana dengan orang tua, dalam nasihat seorang teman, dalam keberanian mencoba pekerjaan yang belum pernah dilakukan, dan bahkan dalam kesunyian ketika kita punya waktu untuk menengok kembali keputusan-keputusan yang pernah diambil.</p>
+                <p>Setiap pengalaman meninggalkan sesuatu. Keberhasilan mengajarkan rasa syukur dan tanggung jawab. Kegagalan mengajarkan ketekunan, ketelitian, serta keberanian untuk memulai kembali. Tidak semua pelajaran datang dengan cara yang menyenangkan, tetapi hampir semuanya membawa kesempatan untuk melihat dunia dengan sudut pandang yang lebih matang.</p>
+
+                <div class="quote">“Orang yang mau belajar tidak pernah benar-benar berjalan sendirian; ia membawa semua pengalaman sebagai bekal.”</div>
+
+                <h3>Mengapa kita harus terus belajar?</h3>
+                <p>Karena dunia selalu berubah, dan diri kita pun demikian. Pengetahuan membantu kita memahami perubahan, sementara pengalaman membantu kita meresponsnya dengan bijaksana. Dengan belajar, kita tidak sekadar mengumpulkan informasi; kita melatih rasa ingin tahu, memperluas empati, dan menemukan cara yang lebih baik untuk menyelesaikan masalah.</p>
+                <p>Belajar juga membuat kita lebih rendah hati. Semakin banyak hal yang dipahami, semakin jelas bahwa masih ada banyak hal yang belum diketahui. Kesadaran itu bukan alasan untuk merasa kecil, melainkan undangan untuk tetap terbuka. Tidak ada kata terlambat selama kita masih memiliki kemauan untuk bertanya dan kesempatan untuk mencoba.</p>
+
+                <h3>Menemukan guru di setiap pengalaman</h3>
+                <p>Kita dapat belajar dari buku, tetapi juga dari kesalahan yang jujur, dari pekerjaan yang dilakukan berulang-ulang, dan dari orang-orang yang memiliki kehidupan berbeda dari kita. Dengarkan cerita mereka. Amati cara mereka bertahan. Sering kali, pelajaran paling berharga tersembunyi dalam hal kecil yang hampir kita lewatkan.</p>
+                <p>Pada akhirnya, hidup bukan hanya tentang mencapai tujuan. Hidup adalah tentang menjadi seseorang yang lebih sadar dalam setiap langkah: lebih sabar ketika menunggu, lebih berani ketika memilih, dan lebih bersyukur ketika menerima. Teruslah belajar, teruslah berkembang, dan jangan takut menjadi pemula lagi.</p>
+            </div>
+
+            <aside class="aside">
+                <h3>Bekal hari ini</h3>
+                <p>Tiga pengingat sederhana untuk menemani perjalanan belajar.</p>
+                <ul class="list">
+                    <li><strong>01 / Rasa ingin tahu</strong>Berani bertanya sebelum terburu-buru menyimpulkan.</li>
+                    <li><strong>02 / Ketekunan</strong>Memberi waktu pada proses, sekecil apa pun kemajuannya.</li>
+                    <li><strong>03 / Keterbukaan</strong>Menerima bahwa setiap orang dapat menjadi guru.</li>
+                </ul>
+            </aside>
+        </article>
+        <section class="site-info" aria-label="Informasi situs">
+            <div class="info-block">
+                <h2>Tentang Saya</h2>
+                <p>Selamat datang di <strong>Catatan Alkin</strong>. Situs ini dikelola secara pribadi oleh <strong>Ainul Yakin</strong> sebagai ruang digital, ruang berbagi cerita dan sudut pandang hidup.</p>
+            </div>
+            <div class="info-block">
+                <h2>Kebijakan Privasi</h2>
+                <p>Privasi pengunjung adalah hal yang sangat penting bagi kami. Situs ini dapat menggunakan cookie standar pihak ketiga seperti Google AdSense untuk menayangkan iklan yang relevan berdasarkan kunjungan Anda di internet. Kami tidak pernah memperjualbelikan data pribadi Anda kepada pihak mana pun.</p>
+            </div>
+            <div class="info-block">
+                <h2>Hubungi Saya</h2>
+                <p>Pertanyaan, saran, atau keperluan kerja sama mengenai konten cerita di blog ini dapat disampaikan secara resmi melalui:<br><a href="mailto:ayakin398@gmail.com">Email: ayakin398@gmail.com</a></p>
+            </div>
+        </section>
+        <footer>
+            <p>Belajar untuk berkembang. Berkembang untuk menjadi versi terbaik dari diri sendiri.</p>
+        </footer>
+    </main>
+</body>
+</html>
