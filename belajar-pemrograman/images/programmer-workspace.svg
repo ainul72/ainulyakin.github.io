@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Programmer bekerja</title>
+  <desc id="desc">Ilustrasi seorang programmer bekerja di depan komputer dengan kode di layar.</desc>
+  <rect width="800" height="500" fill="#fff3e5"/>
+  <circle cx="106" cy="96" r="58" fill="#63c5da" opacity=".35"/>
+  <circle cx="710" cy="410" r="88" fill="#e55c4d" opacity=".14"/>
+  <rect x="462" y="82" width="238" height="174" rx="12" fill="#183b56"/>
+  <rect x="477" y="98" width="208" height="140" rx="5" fill="#102a43"/>
+  <path d="M510 137h78M510 164h116M510 191h92" stroke="#63c5da" stroke-width="9" stroke-linecap="round"/>
+  <path d="M510 218h48" stroke="#f6c85f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M430 274h302l-35 20H465z" fill="#24566b"/>
+  <path d="M386 448h314l-36-154H421z" fill="#e55c4d"/>
+  <circle cx="522" cy="188" r="54" fill="#f0b083"/>
+  <path d="M476 180c4-50 92-62 103 7-29-14-63-15-103-7z" fill="#183b56"/>
+  <path d="M462 279c26-24 109-24 138 0l-8 105H471z" fill="#63c5da"/>
+  <path d="M475 314l-78 47M594 313l73 44" stroke="#f0b083" stroke-width="28" stroke-linecap="round"/>
+  <path d="M381 371l-46 55M668 370l45 55" stroke="#183b56" stroke-width="28" stroke-linecap="round"/>
+  <rect x="314" y="423" width="82" height="16" rx="8" fill="#102a43"/><rect x="678" y="423" width="82" height="16" rx="8" fill="#102a43"/>
+</svg>

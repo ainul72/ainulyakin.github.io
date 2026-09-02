@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Dasar HTML</title>
+  <desc id="desc">Ilustrasi layar kode HTML dengan simbol tag dan warna biru, kuning, serta merah.</desc>
+  <rect width="800" height="500" fill="#eaf5f7"/>
+  <circle cx="690" cy="82" r="46" fill="#f6c85f" opacity=".55"/>
+  <circle cx="112" cy="414" r="72" fill="#e55c4d" opacity=".12"/>
+  <rect x="112" y="78" width="576" height="344" rx="18" fill="#102a43"/>
+  <rect x="112" y="78" width="576" height="48" rx="18" fill="#183b56"/>
+  <circle cx="144" cy="102" r="7" fill="#e55c4d"/><circle cx="168" cy="102" r="7" fill="#f6c85f"/><circle cx="192" cy="102" r="7" fill="#4fb286"/>
+  <text x="160" y="184" fill="#e55c4d" font-family="monospace" font-size="32">&lt;main&gt;</text>
+  <text x="198" y="232" fill="#f6c85f" font-family="monospace" font-size="29">&lt;h1&gt;</text>
+  <text x="340" y="232" fill="#f4f7f8" font-family="monospace" font-size="29">Belajar HTML</text>
+  <text x="198" y="280" fill="#f6c85f" font-family="monospace" font-size="29">&lt;/h1&gt;</text>
+  <text x="198" y="328" fill="#63c5da" font-family="monospace" font-size="29">&lt;p&gt;</text>
+  <text x="290" y="328" fill="#f4f7f8" font-family="monospace" font-size="29">Struktur web</text>
+  <text x="198" y="376" fill="#63c5da" font-family="monospace" font-size="29">&lt;/p&gt;</text>
+  <text x="160" y="408" fill="#e55c4d" font-family="monospace" font-size="32">&lt;/main&gt;</text>
+</svg>
