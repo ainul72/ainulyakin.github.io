@@ -4,24 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catatan Alkin</title>
+    <!-- Google Fonts untuk font yang lebih estetik dan profesional -->
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        h1 { color: #333; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        a { color: #0066cc; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.025em;
+        }
+        header p {
+            color: #64748b;
+            font-size: 1.05rem;
+        }
+        .section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #475569;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        .grid-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.02);
+            transition: all 0.2s ease-in-out;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -4px rgba(0,0,0,0.05);
+            border-color: #cbd5e1;
+        }
+        .card-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .card-icon {
+            font-size: 1.6rem;
+            background: #f1f5f9;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .card-info h3 {
+            font-size: 1.15rem;
+            color: #0f172a;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .card-info p {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .arrow-icon {
+            color: #94a3b8;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .card:hover .arrow-icon {
+            color: #2563eb;
+            transform: translateX(4px);
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
     </style>
 </head>
 <body>
-    <h1>📚 Selamat Datang di Catatan Alkin</h1>
-    <p>Silakan pilih kategori tulisan yang ingin Anda baca di bawah ini:</p>
-    <hr>
-    <ul>
-        <li><a href="kisah-ojol/">📖 Kisah Ojol</a></li>
-        <li><a href="driver-gojek/">🚗 Driver Gojek</a></li>
-        <li><a href="kata-alkin/">✍️ Kata Alkin</a></li>
-        <li><a href="belajar-untuk-hidup.html">💡 Belajar Untuk Hidup</a></li>
-    </ul>
+
+    <div class="container">
+        <header>
+            <h1>📚 Catatan Alkin</h1>
+            <p>Ruang berbagi cerita, pengalaman ojek online, dan sudut pandang hidup.</p>
+        </header>
+
+        <main>
+            <h2 class="section-title">Kategori Tulisan</h2>
+            <div class="grid-menu">
+                
+                <a href="kisah-ojol/" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">📖</div>
+                        <div class="card-info">
+                            <h3>Kisah Ojol</h3>
+                            <p>Kumpulan suka duka dan cerita menarik dari jalanan.</p>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+
+                <a href="driver-gojek/" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">🚗</div>
+                        <div class="card-info">
+                            <h3>Driver Gojek</h3>
+                            <p>Catatan, tips, dan lika-liku harian sebagai mitra driver.</p>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+
+                <a href="kata-alkin/" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">✍️</div>
+                        <div class="card-info">
+                            <h3>Kata Alkin</h3>
+                            <p>Untaian pemikiran, opini pendek, dan coretan acak sehari-hari.</p>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+
+                <a href="belajar-untuk-hidup.html" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">💡</div>
+                        <div class="card-info">
+                            <h3>Belajar Untuk Hidup</h3>
+                            <p>Refleksi diri dan pembelajaran penting tentang perjalanan hidup.</p>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Catatan Alkin. Dibuat dengan GitHub Pages.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
