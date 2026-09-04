@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org">
+  
+  <!-- Halaman Beranda -->
   <url>
     <loc>https://catatanalkin.my.id</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Halaman Kategori Kisah Ojol -->
+  <url>
+    <loc>https://catatanalkin.my.id/kisah-ojol</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Kategori Driver Gojek -->
+  <url>
+    <loc>https://catatanalkin.my.id/driver-gojek</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Kategori Kata Alkin -->
+  <url>
+        <loc>https://catatanalkin.my.id/kata-alkin</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+    <!-- Halaman Kategori Hidup Untuk Belajar -->
+    <url>
+          <loc>https://catatanalkin.my.id/hidup untuk belajar</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    </url>
+
+  <!-- Halaman Kategori Belajar Pemrograman -->
+  <url>
+          <loc>https://catatanalkin.my.id/belajar pemrograman</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    </url>
+
 </urlset>
