@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://catatanalkin.my.id/sitemap.xml
