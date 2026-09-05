@@ -1,6 +1,7 @@
 {
-  "cleanUrls": true,
+  "version": 2,
   "rewrites": [
-    { "source": "/ads.txt", "destination": "/public/ads.txt" }
+    { "source": "/ads.txt", "destination": "/public/ads.txt" },
+    { "source": "/(.*)", "destination": "/api/index.py" }
   ]
 }
