@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/ads.txt", "destination": "/public/ads.txt" }
-  ]
-}
